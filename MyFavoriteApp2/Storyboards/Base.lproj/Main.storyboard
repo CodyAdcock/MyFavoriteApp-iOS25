@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j7M-N0-uay">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,13 +12,13 @@
         <!--My Favorite App-->
         <scene sceneID="5cg-f8-7Wo">
             <objects>
-                <tableViewController id="clX-WW-byb" sceneMemberID="viewController">
+                <tableViewController id="clX-WW-byb" customClass="UserListTableViewController" customModule="MyFavoriteApp2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ifo-Xb-ARa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="uiC-YR-rBL" detailTextLabel="pUM-NM-ZHh" rowHeight="60" style="IBUITableViewCellStyleValue1" id="oLO-UA-Mxs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" textLabel="uiC-YR-rBL" detailTextLabel="pUM-NM-ZHh" rowHeight="60" style="IBUITableViewCellStyleValue1" id="oLO-UA-Mxs">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oLO-UA-Mxs" id="TdG-ai-p1u">
@@ -49,7 +49,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Favorite App" id="kH9-Nf-WME">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Iax-Ez-YdQ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Iax-Ez-YdQ">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="clX-WW-byb" id="qMr-rg-Yh2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGK-g5-oD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
