@@ -18,7 +18,7 @@ class UserController{
     var users: [User] = []
     
     // Base URL
-    let baseURL = URL(string: "https://favoriteapp-375c6.firebaseio.com")
+    let baseURL = URL(string: "https://myfavoriteapp-1c70e.firebaseio.com/")
     
     // MARK: - CRUD Functions
     
@@ -27,9 +27,9 @@ class UserController{
         //URL
         guard var url = baseURL else {completion(false); return}
         url.appendPathComponent("users")
-        //https://favoriteapp-375c6.firebaseio.com/users
+        //https://myfavoriteapp-1c70e.firebaseio.com/users
         url.appendPathExtension("json")
-        //https://favoriteapp-375c6.firebaseio.com/users.json
+        //https://myfavoriteapp-1c70e.firebaseio.com/users.json
         print(url)
         
         //URLRequest
@@ -87,6 +87,7 @@ class UserController{
         
         do{
             let data = try encoder.encode(newUser)
+            print(data)
             request.httpBody = data
         }catch{
             print("There was an error encoding the user into JSON: \(error.localizedDescription)")
