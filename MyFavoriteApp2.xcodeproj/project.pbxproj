@@ -11,6 +11,7 @@
 		C3BBE6AE2242989000FE38FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BBE6AC2242989000FE38FD /* Main.storyboard */; };
 		C3BBE6B02242989200FE38FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BBE6AF2242989200FE38FD /* Assets.xcassets */; };
 		C3BBE6B32242989200FE38FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BBE6B12242989200FE38FD /* LaunchScreen.storyboard */; };
+		C3BBE6C122429F7800FE38FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BBE6C022429F7800FE38FD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		C3BBE6AF2242989200FE38FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3BBE6B22242989200FE38FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3BBE6B42242989200FE38FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3BBE6C022429F7800FE38FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,62 @@
 		C3BBE6A72242989000FE38FD /* MyFavoriteApp2 */ = {
 			isa = PBXGroup;
 			children = (
-				C3BBE6A82242989000FE38FD /* AppDelegate.swift */,
+				C3BBE6BE22429E1A00FE38FD /* View Controllers */,
+				C3BBE6BD22429E1900FE38FD /* Views */,
+				C3BBE6BC22429E1800FE38FD /* Model Controllers */,
+				C3BBE6BB22429E1700FE38FD /* Models */,
+				C3BBE6BA22429E1600FE38FD /* Storyboards */,
+				C3BBE6BF22429E4100FE38FD /* Resources */,
+			);
+			path = MyFavoriteApp2;
+			sourceTree = "<group>";
+		};
+		C3BBE6BA22429E1600FE38FD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				C3BBE6AC2242989000FE38FD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C3BBE6BB22429E1700FE38FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3BBE6C022429F7800FE38FD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3BBE6BC22429E1800FE38FD /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		C3BBE6BD22429E1900FE38FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3BBE6BE22429E1A00FE38FD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3BBE6BF22429E4100FE38FD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3BBE6A82242989000FE38FD /* AppDelegate.swift */,
 				C3BBE6AF2242989200FE38FD /* Assets.xcassets */,
 				C3BBE6B12242989200FE38FD /* LaunchScreen.storyboard */,
 				C3BBE6B42242989200FE38FD /* Info.plist */,
 			);
-			path = MyFavoriteApp2;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BBE6C122429F7800FE38FD /* User.swift in Sources */,
 				C3BBE6A92242989000FE38FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = MyFavoriteApp2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyFavoriteApp2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = MyFavoriteApp2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyFavoriteApp2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
